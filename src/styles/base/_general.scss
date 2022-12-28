@@ -1,0 +1,18 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $dark-blue;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.6rem;
+}

@@ -1,0 +1,71 @@
+.adviceCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $dark-grayish-blue;
+  border-radius: 1.5rem;
+  padding: 4.8rem;
+  max-width: 54rem;
+
+  &__title {
+    color: $neon-green;
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.4rem;
+    text-align: center;
+
+    @include breakpoint(small) {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+  }
+
+  &__text {
+    color: $light-cyan;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    text-align: center;
+
+    @include breakpoint(small) {
+      font-size: 2.8rem;
+      line-height: 3.8rem;
+    }
+  }
+
+  .divider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    hr {
+      border: none;
+      background-color: $grayish-blue;
+      height: 0.1rem;
+      width: 100%;
+    }
+
+    &__icon {
+      position: absolute;
+      padding: 1.6rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $dark-grayish-blue;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .customBtn {
+    position: absolute;
+    bottom: -3.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

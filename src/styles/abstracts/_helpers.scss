@@ -1,0 +1,19 @@
+.u-mb-24 {
+  margin-bottom: 2.4rem;
+}
+
+.u-mb-40-24 {
+  margin-bottom: 2.4rem;
+
+  @include breakpoint(small) {
+    margin-bottom: 4rem;
+  }
+}
+
+.u-mb-40-32 {
+  margin-bottom: 3.2rem;
+
+  @include breakpoint(small) {
+    margin-bottom: 4rem;
+  }
+}
