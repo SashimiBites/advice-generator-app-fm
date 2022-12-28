@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import Button from "../Button/Button";
-import IconDivider from '../../assets/icons/ic_divider_center.svg';
-import IconDice from '../../assets/icons/ic_dice_blue.svg';
 
 interface Advice {
   id: number;
@@ -41,11 +39,17 @@ const AdviceCard = () => {
       <div className='divider u-mb-40-32'>
         <hr/>
         <div className='divider__icon'>
-          <img src={IconDivider} alt='divider icon'/>
+          <img 
+            src='https://res.cloudinary.com/dz3ogjvgl/image/upload/v1672261473/advice-generator-app/icons/ic_divider_center_setazg.svg' 
+            alt='divider icon'/>
         </div>
       </div>
       <div className='customBtn'>
-        <Button content={<img src={IconDice} alt='search other advice'/>} onBtnClick={onDiceClick}/>
+        <Button 
+          content={
+            <img 
+            src='https://res.cloudinary.com/dz3ogjvgl/image/upload/v1672261473/advice-generator-app/icons/ic_dice_blue_lzg7tg.svg' 
+            alt='search other advice'/>} onBtnClick={onDiceClick}/>
       </div>
     </div>
   )
